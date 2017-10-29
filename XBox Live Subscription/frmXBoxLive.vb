@@ -12,7 +12,7 @@ Public Class frmXBoxLive
     ' Declare 
 
     Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
-        ' The code execute when user taps or click on Calculate button,
+        ' This event handler is executed when user taps or click on Calculate button,
         ' it will calculate subscription cost based on subscription type
         ' selection.
 
@@ -30,6 +30,7 @@ Public Class frmXBoxLive
         ' to clear previous calculation
         lblSubscriptionCost.Text = 0.ToString("C")
 
+        ' This satisfy the restriction #3
         ' Did user enter a name?
         If txtName.Text.Length = 0 Then
             ' Display an error message box because user did not enter a name
@@ -40,6 +41,7 @@ Public Class frmXBoxLive
             Return
         End If
 
+        ' This satisfy the restriction #1
         ' Did user enter a non-numeric value?
         If Not IsNumeric(txtNumberOfMonths.Text) Then
             ' Display an error message box because user did not enter a number
@@ -54,6 +56,7 @@ Public Class frmXBoxLive
         ' convert entered Number of Months to Integer
         intNumberOfMonths = Convert.ToInt32(txtNumberOfMonths.Text)
 
+        ' This satisfy the restriction #2
         ' Is the Number of month less than or equal to zero?
         If intNumberOfMonths <= 0 Then
             ' Display error message because user entered a negative number of months
