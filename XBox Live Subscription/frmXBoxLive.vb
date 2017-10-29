@@ -26,6 +26,10 @@ Public Class frmXBoxLive
         Dim decSubscriptionPrice As Decimal
         Dim decSubscriptionCost As Decimal
 
+        ' set subscription Cost label to $0
+        ' to clear previous calculation
+        lblSubscriptionCost.Text = 0.ToString("C")
+
         ' Did user enter a name?
         If txtName.Text.Length = 0 Then
             ' Display an error message box because user did not enter a name
@@ -90,7 +94,7 @@ Public Class frmXBoxLive
 
         txtName.Clear()
         txtNumberOfMonths.Clear()
-        lblSubscriptionCost.Text = "$0"
+        lblSubscriptionCost.Text = 0.ToString("C")
         radSingleSubcription.Checked = True
         radFamilySubscription.Checked = False
         radDeveloperSubscription.Checked = False
@@ -103,7 +107,7 @@ Public Class frmXBoxLive
         ' It set the text of Subcription Cost label to $0,
         ' set focus on the Full name text box.
 
-        lblSubscriptionCost.Text = "$0"
+        lblSubscriptionCost.Text = 0.ToString("C")
         txtName.Focus()
 
     End Sub
