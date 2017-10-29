@@ -27,10 +27,10 @@ Partial Class frmXBoxLive
         Me.lblNumberOfMonthsLabel = New System.Windows.Forms.Label()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.txtNumberOfMonths = New System.Windows.Forms.TextBox()
-        Me.rdaSingleSubcription = New System.Windows.Forms.RadioButton()
+        Me.radSingleSubcription = New System.Windows.Forms.RadioButton()
         Me.grpMembershipTypes = New System.Windows.Forms.GroupBox()
-        Me.rdaFamilySubscription = New System.Windows.Forms.RadioButton()
-        Me.rdaDeveloperSubscription = New System.Windows.Forms.RadioButton()
+        Me.radFamilySubscription = New System.Windows.Forms.RadioButton()
+        Me.radDeveloperSubscription = New System.Windows.Forms.RadioButton()
         Me.lblSubscriptionCostLabel = New System.Windows.Forms.Label()
         Me.lblSubscriptionCost = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
@@ -84,24 +84,25 @@ Partial Class frmXBoxLive
         Me.txtNumberOfMonths.Size = New System.Drawing.Size(134, 27)
         Me.txtNumberOfMonths.TabIndex = 4
         '
-        'rdaSingleSubcription
+        'radSingleSubcription
         '
-        Me.rdaSingleSubcription.AutoSize = True
-        Me.rdaSingleSubcription.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdaSingleSubcription.Location = New System.Drawing.Point(19, 36)
-        Me.rdaSingleSubcription.Name = "rdaSingleSubcription"
-        Me.rdaSingleSubcription.Size = New System.Drawing.Size(182, 22)
-        Me.rdaSingleSubcription.TabIndex = 5
-        Me.rdaSingleSubcription.TabStop = True
-        Me.rdaSingleSubcription.Text = "Single Subscription"
-        Me.rdaSingleSubcription.UseVisualStyleBackColor = True
+        Me.radSingleSubcription.AutoSize = True
+        Me.radSingleSubcription.Checked = True
+        Me.radSingleSubcription.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radSingleSubcription.Location = New System.Drawing.Point(19, 36)
+        Me.radSingleSubcription.Name = "radSingleSubcription"
+        Me.radSingleSubcription.Size = New System.Drawing.Size(182, 22)
+        Me.radSingleSubcription.TabIndex = 5
+        Me.radSingleSubcription.TabStop = True
+        Me.radSingleSubcription.Text = "Single Subscription"
+        Me.radSingleSubcription.UseVisualStyleBackColor = True
         '
         'grpMembershipTypes
         '
         Me.grpMembershipTypes.BackColor = System.Drawing.Color.White
-        Me.grpMembershipTypes.Controls.Add(Me.rdaDeveloperSubscription)
-        Me.grpMembershipTypes.Controls.Add(Me.rdaFamilySubscription)
-        Me.grpMembershipTypes.Controls.Add(Me.rdaSingleSubcription)
+        Me.grpMembershipTypes.Controls.Add(Me.radDeveloperSubscription)
+        Me.grpMembershipTypes.Controls.Add(Me.radFamilySubscription)
+        Me.grpMembershipTypes.Controls.Add(Me.radSingleSubcription)
         Me.grpMembershipTypes.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpMembershipTypes.Location = New System.Drawing.Point(24, 385)
         Me.grpMembershipTypes.Name = "grpMembershipTypes"
@@ -110,29 +111,27 @@ Partial Class frmXBoxLive
         Me.grpMembershipTypes.TabStop = False
         Me.grpMembershipTypes.Text = "Select membership types:"
         '
-        'rdaFamilySubscription
+        'radFamilySubscription
         '
-        Me.rdaFamilySubscription.AutoSize = True
-        Me.rdaFamilySubscription.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdaFamilySubscription.Location = New System.Drawing.Point(17, 75)
-        Me.rdaFamilySubscription.Name = "rdaFamilySubscription"
-        Me.rdaFamilySubscription.Size = New System.Drawing.Size(344, 22)
-        Me.rdaFamilySubscription.TabIndex = 6
-        Me.rdaFamilySubscription.TabStop = True
-        Me.rdaFamilySubscription.Text = "Family Subscription (up to 4 members)"
-        Me.rdaFamilySubscription.UseVisualStyleBackColor = True
+        Me.radFamilySubscription.AutoSize = True
+        Me.radFamilySubscription.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radFamilySubscription.Location = New System.Drawing.Point(17, 75)
+        Me.radFamilySubscription.Name = "radFamilySubscription"
+        Me.radFamilySubscription.Size = New System.Drawing.Size(344, 22)
+        Me.radFamilySubscription.TabIndex = 6
+        Me.radFamilySubscription.Text = "Family Subscription (up to 4 members)"
+        Me.radFamilySubscription.UseVisualStyleBackColor = True
         '
-        'rdaDeveloperSubscription
+        'radDeveloperSubscription
         '
-        Me.rdaDeveloperSubscription.AutoSize = True
-        Me.rdaDeveloperSubscription.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdaDeveloperSubscription.Location = New System.Drawing.Point(17, 114)
-        Me.rdaDeveloperSubscription.Name = "rdaDeveloperSubscription"
-        Me.rdaDeveloperSubscription.Size = New System.Drawing.Size(261, 22)
-        Me.rdaDeveloperSubscription.TabIndex = 7
-        Me.rdaDeveloperSubscription.TabStop = True
-        Me.rdaDeveloperSubscription.Text = "XBox Developer Subscription"
-        Me.rdaDeveloperSubscription.UseVisualStyleBackColor = True
+        Me.radDeveloperSubscription.AutoSize = True
+        Me.radDeveloperSubscription.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radDeveloperSubscription.Location = New System.Drawing.Point(17, 114)
+        Me.radDeveloperSubscription.Name = "radDeveloperSubscription"
+        Me.radDeveloperSubscription.Size = New System.Drawing.Size(261, 22)
+        Me.radDeveloperSubscription.TabIndex = 7
+        Me.radDeveloperSubscription.Text = "XBox Developer Subscription"
+        Me.radDeveloperSubscription.UseVisualStyleBackColor = True
         '
         'lblSubscriptionCostLabel
         '
@@ -146,13 +145,13 @@ Partial Class frmXBoxLive
         '
         'lblSubscriptionCost
         '
-        Me.lblSubscriptionCost.AutoSize = True
         Me.lblSubscriptionCost.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSubscriptionCost.Location = New System.Drawing.Point(272, 579)
+        Me.lblSubscriptionCost.Location = New System.Drawing.Point(248, 579)
         Me.lblSubscriptionCost.Name = "lblSubscriptionCost"
-        Me.lblSubscriptionCost.Size = New System.Drawing.Size(73, 18)
+        Me.lblSubscriptionCost.Size = New System.Drawing.Size(103, 18)
         Me.lblSubscriptionCost.TabIndex = 8
         Me.lblSubscriptionCost.Text = "$X,XXX"
+        Me.lblSubscriptionCost.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'btnCalculate
         '
@@ -215,10 +214,10 @@ Partial Class frmXBoxLive
     Friend WithEvents lblNumberOfMonthsLabel As Label
     Friend WithEvents txtName As TextBox
     Friend WithEvents txtNumberOfMonths As TextBox
-    Friend WithEvents rdaSingleSubcription As RadioButton
+    Friend WithEvents radSingleSubcription As RadioButton
     Friend WithEvents grpMembershipTypes As GroupBox
-    Friend WithEvents rdaDeveloperSubscription As RadioButton
-    Friend WithEvents rdaFamilySubscription As RadioButton
+    Friend WithEvents radDeveloperSubscription As RadioButton
+    Friend WithEvents radFamilySubscription As RadioButton
     Friend WithEvents lblSubscriptionCostLabel As Label
     Friend WithEvents lblSubscriptionCost As Label
     Friend WithEvents btnCalculate As Button
